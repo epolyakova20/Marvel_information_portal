@@ -7,16 +7,21 @@ import ErrorBoundary from "../errorBoundary/ErrorBoundary";
 import decoration from '../../resources/img/vision.png';
 
 const MainPage = () => {
+  const [selectedChar, setSelectedChar] = useState(null);
 
-  state = {
-    selectedChar: null
+  const onCharSelected = (id) => {
+    setSelectedChar(id);
   }
 
-  onCharSelected = (id) => {
-    this.setState({
-      selectedChar: id
-    })
-  }
+  // state = {
+  //   selectedChar: null
+  // }
+
+  // onCharSelected = (id) => {
+  //   this.setState({
+  //     selectedChar: id
+  //   })
+  // }
 
   return (
     <>
